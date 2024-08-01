@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="language-options">
+                <a href="#" class="active">English</a>
+                <a href="#">Deutsch</a>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="assests/b7177805c2683cc6d2a09c7a52b4179e.jpg" alt="Mercedes Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Art & Culture</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Innovation</a></li>
+                <li><a href="#">Exclusive</a></li>
+                <li><a href="#">Vehicles</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMobileMenu()">
+                <div class="menu-icon-bar"></div>
+                <div class="menu-icon-bar"></div>
+                <div class="menu-icon-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="content fade-up">
+            <h1>The Geländewagen.</h1>
+            <p>The all-new electric G-Class.</p>
+            <a href="#" class="btn">Discover more</a>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="assests/b7177805c2683cc6d2a09c7a52b4179e.jpg" alt="Mercedes Logo">
+            <span class="close" onclick="toggleMobileMenu()">Close</span>
+        </div>
+        <ul>
+            <li><a href="#">Art & Culture</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Innovation</a></li>
+            <li><a href="#">Exclusive</a></li>
+            <li><a href="#">Vehicles</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
