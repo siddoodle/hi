@@ -225,3 +225,29 @@ p {
         margin: 15px 0; /* Adjust spacing between menu items */
     }
 }
+/* Mobile Adjustments for Hero Section */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-left: 0; /* Remove left padding on mobile screens */
+        justify-content: center; /* Center content */
+        text-align: center; /* Center text alignment */
+    }
+
+    .content {
+        position: static; /* Remove relative positioning */
+        margin-top: 0; /* Remove any top margin */
+        animation: none; /* Disable animation if needed */
+    }
+}
+
+/* Additional Responsive Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+    .hero-section {
+        height: 100vh; /* Ensure full viewport height on very small screens */
+    }
+
+    .content {
+        margin-top: 20px; /* Adjust top margin if necessary */
+    }
+}
+
