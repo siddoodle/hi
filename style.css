@@ -212,6 +212,20 @@ p {
         align-items: center;
         height: 80%;
     }
+
+    /* Adjust the hero section */
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Align content to the bottom */
+        padding-left: 0; /* Remove left padding on mobile screens */
+        text-align: center; /* Center text alignment */
+    }
+
+    .content {
+        position: relative; /* Ensure proper positioning */
+        margin: 0; /* Remove margin if needed */
+    }
 }
 
 @media (max-width: 480px) {
@@ -224,30 +238,11 @@ p {
     .mobile-menu ul li {
         margin: 15px 0; /* Adjust spacing between menu items */
     }
-}
-/* Mobile Adjustments for Hero Section */
-@media (max-width: 768px) {
+
+    /* Ensure hero section occupies full height */
     .hero-section {
-        padding-left: 0; /* Remove left padding on mobile screens */
-        justify-content: center; /* Center content */
-        text-align: center; /* Center text alignment */
-    }
-
-    .content {
-        position: static; /* Remove relative positioning */
-        margin-top: 0; /* Remove any top margin */
-        animation: none; /* Disable animation if needed */
+        height: 100vh; /* Full viewport height */
     }
 }
 
-/* Additional Responsive Adjustments for Very Small Screens */
-@media (max-width: 480px) {
-    .hero-section {
-        height: 100vh; /* Ensure full viewport height on very small screens */
-    }
-
-    .content {
-        margin-top: 20px; /* Adjust top margin if necessary */
-    }
-}
 
